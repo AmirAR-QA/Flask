@@ -10,9 +10,5 @@ def ben():
 def harry():
     return render_template('harry.html')
 
-@app.route('/b')
-def letter_b():
-    return render_template('b.html', users = ["ben", "harry", "bob", "jay", "matt", "bill"])
-
 if __name__ == "__main__":
     app.run(debug=True, host='0.0.0.0')
